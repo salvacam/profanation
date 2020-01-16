@@ -1,0 +1,10 @@
+Package: profanation
+Version: 
+Description: RetroFW port of Profanation Deluxe
+Section: emus
+Priority: optional
+Maintainer: pingflood
+Architecture: mipsel
+Homepage: https://github.com/retrofw/profanation
+Depends:
+Source: https://github.com/retrofw/profanation
