@@ -1,0 +1,4 @@
+title=Profanation
+description=Profanation port
+exec=/home/retrofw/games/profanation/profanation.elf
+clock=600
