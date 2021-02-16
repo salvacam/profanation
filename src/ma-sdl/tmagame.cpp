@@ -155,7 +155,11 @@ bool TMAGame::setGraphicsMode(int width,int height,int colordepth,bool fullscree
         SDL_FreeSurface(ScreenSurf);
     }
 
+    #ifdef MIYOO_MODE
+    ScreenSurf = SDL_SetVideoMode(width, height, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
+    #else
     ScreenSurf = SDL_SetVideoMode(width, height, 16, SDL_HWSURFACE | SDL_TRIPLEBUF);
+    #endif
     // ScreenSurface = SDL_SetVideoMode(320, 480, 16, flags);
     // ScreenSurf = SDL_CreateRGBSurface(SDL_SWSURFACE, width, height, colordepth, 0, 0, 0, 0);
     if (ScreenSurf!=NULL)
